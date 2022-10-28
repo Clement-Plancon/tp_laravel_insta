@@ -1,0 +1,23 @@
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin display($display:flex, $justifycontent:center, $alignitems:center){
+    display: $display;
+    justify-content: $justifycontent;
+    align-items: $alignitems;
+}
+
+.container{
+  @include size(100%, 100%);
+  @include display();
+
+.register_card{
+    @include size(400px, 400px);
+    @include display();
+    flex-direction: column;
+    background: rgb(181, 178, 178);
+    box-shadow: 10px 5px 5px rgb(205, 203, 203);
+    border-radius: 5px;
+}
+}
